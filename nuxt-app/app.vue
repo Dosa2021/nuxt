@@ -1,6 +1,13 @@
+<script setup>
+useHead({
+  title: "Hello",
+});
+</script>
+
 <template>
-  <div>
+  <!-- <div>
     <NuxtRouteAnnouncer />
     <NuxtWelcome />
-  </div>
+  </div> -->
+  <p>Hello</p>
 </template>
