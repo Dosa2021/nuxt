@@ -1,21 +1,20 @@
 <script setup>
-useHead({
-  title: "すごい丸椅子 | DTFNTR - 目黒のアンティーク家具専門店",
+const products = useState("products");
+const route = useRoute();
+const id = Number(route.params.id);
+const product = products.value.find((element) => {
+  return element.id === id;
 });
 </script>
 
 <template>
   <section class="product">
+    <img :src="product.imgUrl_2" />
     <div class="desc">
-      <h2>すごい丸椅子</h2>
-      <p>
-        すごい丸椅子です。すごい丸椅子です。すごい丸椅子です。すごい丸椅子です。すごい丸椅子です。すごい丸椅子です。すごい丸椅子です。すごい丸椅子です。すごい丸椅子です。
-      </p>
-      <p>12,000円 (税込)</p>
-      <button>購入する</button>
-    </div>
-    <div class="pic">
-      <!-- <img src="/product-0.png" alt="すごい丸椅子" width="400" height="400" /> -->
+      <h2>{{ product.name }}</h2>
+      <h3>{{ product.desc }}</h3>
+      <!-- <p>12,000円 (税込)</p> -->
+      <!-- <button>購入する</button> -->
     </div>
   </section>
 </template>
@@ -23,7 +22,7 @@ useHead({
 <style scoped>
 /* product */
 
-.product {
+/* .product {
   display: flex;
   gap: 32px;
   margin-top: 32px;
@@ -46,5 +45,13 @@ useHead({
   margin-top: 16px;
   padding: 8px 16px;
   cursor: pointer;
+} */
+.product img {
+  width: 100%;
+  margin-top: 20px;
+}
+
+.product h2 {
+  padding: 20px;
 }
 </style>
