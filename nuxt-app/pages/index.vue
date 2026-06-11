@@ -12,7 +12,7 @@ const products = [
     <h2>Actors</h2>
     <ul>
       <li v-for="product in products" :key="product.id">
-        <NuxtLink to="">
+        <NuxtLink :to="`/products/${product.id}`">
           <img :src="product.imgUrl" alt="Actor" />
           <h3>{{ product.name }}</h3>
           <!-- <p>{{ product.price.toLocaleString() }}</p> -->
@@ -52,7 +52,6 @@ const products = [
 .products img {
   width: 300px;
   height: auto;
-  border-radius: 3px;
 }
 
 .products h3 {
