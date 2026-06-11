@@ -3,7 +3,7 @@
     <h1>
       <NuxtLink to="/">
         <!-- <img src="/logo.png" alt="DTFNTR" width="168" height="48" /> -->
-        Dosa
+        劇団ドサケンズ
       </NuxtLink>
     </h1>
   </header>
