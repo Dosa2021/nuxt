@@ -9,3 +9,4 @@ npx nuxi@3.4.1 init nuxt-app --typescript
 ・NuxtPage
 ・nuxt.config.ts
 ・NuxtLink（link）
+・NuxtLayout
