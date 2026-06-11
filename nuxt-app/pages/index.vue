@@ -13,7 +13,7 @@ const products = [
     <ul>
       <li v-for="product in products" :key="product.id">
         <NuxtLink to="">
-          <img :src="product.imgUrl" alt="すごい丸椅子" width="400" />
+          <img :src="product.imgUrl" alt="Actor" />
           <h3>{{ product.name }}</h3>
           <!-- <p>{{ product.price.toLocaleString() }}</p> -->
         </NuxtLink>
@@ -33,21 +33,34 @@ const products = [
   margin: 32px 0 0;
   padding: 0;
   list-style: none;
-  display: grid;
+  /* display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 32px;
+  gap: 32px; */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.products li {
+  padding-bottom: 30px;
 }
 
 .products a {
-  display: block;
+  /* display: block; */
 }
 
 .products img {
-  width: 100%;
+  width: 300px;
   height: auto;
 }
 
 .products h3 {
   margin-top: 8px;
+}
+
+@media screen and (max-width: 768px) {
+  .products li {
+    margin: 0 auto;
+  }
 }
 </style>
