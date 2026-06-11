@@ -52,6 +52,7 @@ const products = [
 .products img {
   width: 300px;
   height: auto;
+  border-radius: 3px;
 }
 
 .products h3 {
