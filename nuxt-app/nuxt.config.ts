@@ -5,6 +5,9 @@ export default defineNuxtConfig({
   app: {
     head: {
       link: [{ rel: "icon", href: "/che-2.png" }],
+      htmlAttrs: {
+        lang: "ja",
+      },
     },
   },
 });

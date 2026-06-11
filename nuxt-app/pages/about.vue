@@ -1,3 +1,6 @@
 <template>
-  <p>About Page</p>
+  <div>
+    <p>About Page</p>
+    <NuxtLink to="/">To Index</NuxtLink>
+  </div>
 </template>

@@ -7,3 +7,5 @@ npx nuxi@3.4.1 init nuxt-app --typescript
 【学習】
 #07 NuxtPageでページを埋め込もう
 ・NuxtPage
+・nuxt.config.ts
+・NuxtLink（link）
