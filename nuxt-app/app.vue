@@ -1,6 +1,11 @@
+<script setup>
+useHead({
+  title: "Dosa",
+});
+</script>
+
 <template>
   <NuxtLayout>
     <NuxtPage />
-    hoge
   </NuxtLayout>
 </template>

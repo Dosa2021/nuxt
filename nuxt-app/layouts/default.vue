@@ -1,10 +1,17 @@
 <template>
-  <Header />
-  <!-- <div>
-    <p>Index Page</p>
-    <NuxtLink to="/about">To About</NuxtLink>
+  <div class="container">
+    <Header />
+    <slot />
+    <Footer />
   </div>
-  <img src="/mei_1.jpg" alt="" /> -->
-  <slot />
-  <Footer />
 </template>
+
+<style scoped>
+.container {
+  width: calc(100% - 64px);
+  margin: 0 auto;
+  max-width: 600px;
+  box-sizing: border-box;
+  padding: 32px 0;
+}
+</style>
