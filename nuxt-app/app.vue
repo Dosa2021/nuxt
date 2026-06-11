@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <NuxtRouteAnnouncer />
-    <TypeScriptTest />
-  </div>
+  <NuxtLayout>
+    <NuxtPage />
+    hoge
+  </NuxtLayout>
 </template>
