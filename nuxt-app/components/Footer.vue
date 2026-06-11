@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <small>(c) dotinstall.com</small>
+    <small>(c) dosaken</small>
   </footer>
 </template>
 
